@@ -5,72 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac's Agency | Digital Infrastructure</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
 
-    <header class="p-6 bg-white shadow-sm">
+    <header class="p-6 sticky top-0 z-50 glass border-b border-slate-200">
         <nav class="max-w-5xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-blue-900">Isaac's Agency</h1>
-            <a href="https://www.linkedin.com/in/isaac-mwaura-8597b740b" target="_blank" class="text-sm font-semibold text-blue-600 hover:underline">LinkedIn Profile</a>
+            <h1 class="text-2xl font-black tracking-tight text-blue-900">Isaac's Agency</h1>
+            <a href="https://www.linkedin.com/in/isaac-mwaura-8597b740b" target="_blank" class="text-sm font-bold text-blue-600 hover:text-blue-800 transition">LinkedIn Profile</a>
         </nav>
     </header>
 
     <main class="max-w-5xl mx-auto py-16 px-6">
-        <section class="text-center mb-20">
-            <h2 class="text-5xl font-extrabold mb-6 text-blue-900">Digital Infrastructure for Growing Businesses</h2>
-            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">We build professional, high-performance websites that turn visitors into loyal customers. Fast, secure, and mobile-ready.</p>
-            <a href="https://wa.me/254115410525" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition shadow-lg">Start Your Project</a>
+        
+        <section class="text-center mb-24">
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-8 text-blue-900 tracking-tight leading-tight">Digital Infrastructure for<br>Growing Businesses</h2>
+            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">We build professional, high-performance websites that turn visitors into loyal customers. Fast, secure, and mobile-ready.</p>
+            <a href="https://wa.me/254115410525" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition shadow-xl hover:-translate-y-1">Start Your Project</a>
         </section>
 
-        <section class="mb-20">
-            <h3 class="text-3xl font-bold text-center mb-10">Our Core Services</h3>
+        <section class="mb-24">
+            <h3 class="text-3xl font-extrabold text-center mb-12">Our Core Services</h3>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                    <h4 class="text-xl font-bold mb-4 text-blue-900">Custom Web Development</h4>
-                    <p class="text-gray-600">Tailored sites designed to match your brand and business goals.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <h4 class="text-xl font-bold mb-3 text-blue-900">Custom Web Development</h4>
+                    <p class="text-slate-600">Tailored sites designed to match your brand and business goals.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                    <h4 class="text-xl font-bold mb-4 text-blue-900">Performance & SEO</h4>
-                    <p class="text-gray-600">Optimized for speed and search engines so clients find you easily.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <h4 class="text-xl font-bold mb-3 text-blue-900">Performance & SEO</h4>
+                    <p class="text-slate-600">Optimized for speed and search engines so clients find you easily.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                    <h4 class="text-xl font-bold mb-4 text-blue-900">Mobile Optimization</h4>
-                    <p class="text-gray-600">Fully responsive designs that look perfect on every smartphone.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <h4 class="text-xl font-bold mb-3 text-blue-900">Mobile Optimization</h4>
+                    <p class="text-slate-600">Fully responsive designs that look perfect on every smartphone.</p>
                 </div>
             </div>
         </section>
 
-        <section class="bg-gray-100 p-10 rounded-2xl mb-20">
-            <h3 class="text-3xl font-bold text-center mb-10">What Our Clients Say</h3>
+        <section class="bg-white p-12 rounded-3xl mb-24 border border-slate-100 shadow-sm">
+            <h3 class="text-3xl font-extrabold text-center mb-12">What Our Clients Say</h3>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
-                    <img src="client-james-1.jpg" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover" alt="James">
-                    <p class="italic text-gray-700">"Isaac's infrastructure helped us track our leads automatically. Professional work!"</p>
-                    <p class="mt-4 font-bold text-blue-900">— James, Property Owner</p>
+                <div class="text-center group">
+                    <img src="client-james-1.jpg" class="w-20 h-20 rounded-full mx-auto mb-6 object-cover border-4 border-slate-50 group-hover:border-blue-100 transition" alt="James">
+                    <p class="italic text-slate-700 mb-4">"Isaac's infrastructure helped us track our leads automatically. Professional work!"</p>
+                    <p class="font-bold text-blue-900">— James, Property Owner</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
-                    <img src="contractor-mwangi-2.jpg" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover" alt="Mwangi">
-                    <p class="italic text-gray-700">"The website design is clean and professional. My clients trust our online presence now."</p>
-                    <p class="mt-4 font-bold text-blue-900">— Mwangi, Roofing Contractor</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
-                    <img src="homeowner-kioko-3.jpg" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover" alt="Kioko">
-                    <p class="italic text-gray-700">"Efficient and reliable. The site loads fast even on 4G. Impressive results."</p>
-                    <p class="mt-4 font-bold text-blue-900">— Kioko, Homeowner</p>
-                </div>
-            </div>
         </section>
 
-        <footer class="bg-blue-900 text-white p-10 rounded-2xl text-center">
-            <h2 class="text-3xl font-bold mb-6">Let's build your future.</h2>
+        <footer class="bg-blue-900 text-white p-12 rounded-3xl text-center shadow-2xl">
+            <h2 class="text-3xl font-bold mb-4">Let's build your future.</h2>
             <p class="mb-8 opacity-80">Ready to discuss your digital transformation? Let’s talk.</p>
-            <a href="https://wa.me/254115410525" class="inline-block bg-green-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-600 transition shadow-md">
-                Chat on WhatsApp
-            </a>
-            <div class="mt-10 pt-10 border-t border-blue-800 text-sm opacity-60">
-                <p>&copy; 2026 Isaac's Agency. Professional Digital Solutions.</p>
-                <a href="https://www.linkedin.com/in/isaac-mwaura-8597b740b" target="_blank" class="hover:underline">Connect on LinkedIn</a>
-            </div>
+            <a href="https://wa.me/254115410525" class="inline-block bg-green-500 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-green-600 transition shadow-lg">Chat on WhatsApp</a>
         </footer>
     </main>
 
