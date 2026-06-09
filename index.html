@@ -6,61 +6,75 @@
     <title>Isaac's Agency | Digital Infrastructure</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(15px); }
+        .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #312e81 100%); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans antialiased">
 
     <header class="p-6 sticky top-0 z-50 glass border-b border-slate-200">
-        <nav class="max-w-5xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-black tracking-tight text-blue-900">Isaac's Agency</h1>
-            <a href="https://www.linkedin.com/in/isaac-mwaura-8597b740b" target="_blank" class="text-sm font-bold text-blue-600 hover:text-blue-800 transition">LinkedIn Profile</a>
+        <nav class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-black text-blue-900">Isaac's Agency</h1>
+            <div class="space-x-6">
+                <a href="#services" class="text-sm font-bold text-slate-600 hover:text-blue-900">Services</a>
+                <a href="https://www.linkedin.com/in/isaac-mwaura-8597b740b" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-blue-700">LinkedIn</a>
+            </div>
         </nav>
     </header>
 
-    <main class="max-w-5xl mx-auto py-16 px-6">
+    <main class="max-w-6xl mx-auto py-16 px-6">
         
-        <section class="text-center mb-24">
-            <h2 class="text-5xl md:text-6xl font-extrabold mb-8 text-blue-900 tracking-tight leading-tight">Digital Infrastructure for<br>Growing Businesses</h2>
-            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">We build professional, high-performance websites that turn visitors into loyal customers. Fast, secure, and mobile-ready.</p>
-            <a href="https://wa.me/254115410525" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition shadow-xl hover:-translate-y-1">Start Your Project</a>
+        <section class="hero-gradient text-white rounded-[2.5rem] p-20 text-center mb-24 shadow-2xl relative overflow-hidden">
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight">Digital Infrastructure for Growing Businesses</h2>
+            <p class="text-xl md:text-2xl text-blue-100 mb-12 max-w-3xl mx-auto leading-relaxed">We don't just build websites. We engineer high-performance digital systems that capture leads, increase trust, and drive revenue.</p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="https://wa.me/254115410525" class="bg-green-500 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-green-600 transition shadow-xl">Start Your Project</a>
+                <a href="#services" class="bg-white/10 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/20 transition">Explore Services</a>
+            </div>
         </section>
 
-        <section class="mb-24">
-            <h3 class="text-3xl font-extrabold text-center mb-12">Our Core Services</h3>
+        <section id="services" class="mb-24">
+            <h3 class="text-4xl font-extrabold text-center mb-16">Comprehensive Solutions</h3>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300">
-                    <h4 class="text-xl font-bold mb-3 text-blue-900">Custom Web Development</h4>
-                    <p class="text-slate-600">Tailored sites designed to match your brand and business goals.</p>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-2xl transition-all">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl mb-6"></div>
+                    <h4 class="text-2xl font-bold mb-4 text-blue-900">Custom Development</h4>
+                    <p class="text-slate-600 leading-relaxed">Tailored, robust digital architecture designed specifically to match your brand's unique business goals.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300">
-                    <h4 class="text-xl font-bold mb-3 text-blue-900">Performance & SEO</h4>
-                    <p class="text-slate-600">Optimized for speed and search engines so clients find you easily.</p>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-2xl transition-all">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl mb-6"></div>
+                    <h4 class="text-2xl font-bold mb-4 text-blue-900">Performance & SEO</h4>
+                    <p class="text-slate-600 leading-relaxed">We optimize every line of code to ensure your site is fast, secure, and ranks at the top of search engines.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300">
-                    <h4 class="text-xl font-bold mb-3 text-blue-900">Mobile Optimization</h4>
-                    <p class="text-slate-600">Fully responsive designs that look perfect on every smartphone.</p>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-2xl transition-all">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl mb-6"></div>
+                    <h4 class="text-2xl font-bold mb-4 text-blue-900">Mobile First</h4>
+                    <p class="text-slate-600 leading-relaxed">In a mobile-first world, your site will look and perform flawlessly on every device, from tablets to smartphones.</p>
                 </div>
             </div>
         </section>
 
-        <section class="bg-white p-12 rounded-3xl mb-24 border border-slate-100 shadow-sm">
-            <h3 class="text-3xl font-extrabold text-center mb-12">What Our Clients Say</h3>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center group">
-                    <img src="client-james-1.jpg" class="w-20 h-20 rounded-full mx-auto mb-6 object-cover border-4 border-slate-50 group-hover:border-blue-100 transition" alt="James">
-                    <p class="italic text-slate-700 mb-4">"Isaac's infrastructure helped us track our leads automatically. Professional work!"</p>
-                    <p class="font-bold text-blue-900">— James, Property Owner</p>
+        <section class="bg-white p-16 rounded-[2.5rem] mb-24 border border-slate-100 shadow-sm">
+            <h3 class="text-4xl font-extrabold text-center mb-16">Client Success Stories</h3>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-slate-200 rounded-full mx-auto mb-6"></div>
+                    <p class="italic text-slate-700 mb-6 text-lg">"Isaac's infrastructure helped us track our leads automatically. Professional work!"</p>
+                    <p class="font-bold text-blue-900 text-lg">— James, Property Owner</p>
                 </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-slate-200 rounded-full mx-auto mb-6"></div>
+                    <p class="italic text-slate-700 mb-6 text-lg">"The website design is clean and professional. My clients trust our online presence now."</p>
+                    <p class="font-bold text-blue-900 text-lg">— Mwangi, Roofing Contractor</p>
                 </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-slate-200 rounded-full mx-auto mb-6"></div>
+                    <p class="italic text-slate-700 mb-6 text-lg">"Efficient and reliable. The site loads fast even on 4G. Impressive results."</p>
+                    <p class="font-bold text-blue-900 text-lg">— Kioko, Homeowner</p>
+                </div>
+            </div>
         </section>
 
-        <footer class="bg-blue-900 text-white p-12 rounded-3xl text-center shadow-2xl">
-            <h2 class="text-3xl font-bold mb-4">Let's build your future.</h2>
-            <p class="mb-8 opacity-80">Ready to discuss your digital transformation? Let’s talk.</p>
-            <a href="https://wa.me/254115410525" class="inline-block bg-green-500 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-green-600 transition shadow-lg">Chat on WhatsApp</a>
-        </footer>
     </main>
-
 </body>
 </html>
